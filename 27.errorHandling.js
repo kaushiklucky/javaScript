@@ -37,5 +37,5 @@ catch(e){
 
 let errorCode = 100;
 if(errorCode == 100){
-    throw new error("invalid JSON");
+    throw new Error("invalid JSON");
 }
