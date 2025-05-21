@@ -25,3 +25,17 @@ catch(error){
 finally{
     console.log("I will run everytime, as I am finally block")
 }
+
+// lets create a custom error
+try{
+    // reference error
+    console.log(x);
+}
+catch(e){
+    throw new Error("Bhai phle declare karo, fir print karna");
+}
+
+let errorCode = 100;
+if(errorCode == 100){
+    throw new error("invalid JSON");
+}
