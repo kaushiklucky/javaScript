@@ -53,3 +53,6 @@ console.log(value1 == value2); // false
 // Each Symbol is unique, even if the description is identical.
 // Hence, value1 and value2 are not equal.
 
+
+
+// nn bb ss u -> null, number, boolean, bigInt, string, symbol, undefined >> primitive data types
