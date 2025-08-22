@@ -54,8 +54,24 @@ let c = 40;
 // let c = 30; // not possible in let
 c = "Lucky Kaushik";  // possible
 
-// let is dynamically typed datatype
+// let is dynamically typed datatype >> datatype can change on runtime
 
 const y = 25;
 // redeclaring, redefining and reassining are not possible in const data type
 console.log(y);
+
+
+// var vs let vs const in javascipt
+// var is globally scoped while let and cost are block scoped
+
+// var can be updated and redeclared within its scope
+
+// let can be updated but not redeclared
+
+// const cannot be updated or redeclared
+
+// var can be redeclared and reassigned, while let can be reassigned but not redeclared in the same scope, and const cannot be redeclared or reassigned.
+
+// var variable are initialized with undefined whereas let and const variable are not initialized
+
+// const must be initialized during declaration unlike var and let 
