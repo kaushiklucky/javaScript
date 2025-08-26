@@ -112,3 +112,20 @@ let getExp = (p,q) => {
     return s;
 }
 console.log(getExp(2,10));
+
+
+
+let compare = (a,b) => {
+    return a-b;
+}
+let num = [56, 34, 12, 78, 90, 23, 45, 67, 89, 11];
+num.sort(compare);
+console.log(num); // Output: [11, 12, 23, 34, 45, 56, 67, 78, 89, 90]
+
+
+let compare2 = (a,b) => {
+    return b-a;
+}
+let num2 = [56, 34, 12, 78, 90, 23, 45, 67, 89, 11];
+num.sort(compare2);
+console.log(num2); // Output: [90, 89, 78, 67, 56, 45, 34, 23, 12, 11]
