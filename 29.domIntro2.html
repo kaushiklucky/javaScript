@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fpara">First Paragraph</p>
+
+    <h1 id="fheading">First Heading</h1>
+
+    <h3 id="theading"> this is third heading</h3>
+
+    <p class="text">This is first paragragh</p>
+    <p class="text">This is second paragragh</p>
+
+    <div id="fdiv">
+        <section>
+            <button>subscribe</button>
+        </section>
+    </div>
+
+    <div id="sdiv">
+        <p >
+            this is my first para inside div
+            <span>
+                this is span inside div and p
+            </span>
+        </p>
+        <p>this is my second para inside div</p>
+
+    </div>
+
+
+    <!-- console input/output  -->
+
+<!-- set and get innerHTML -->
+ <!-- document.getElementById('fpara').innerHTML; -->
+
+<!-- <p id="fpara">First Paragraph</p> -->
+<!-- document.getElementById('fpara').innerHTML = 'Updated First Paragraph'; -->
+<!-- <p id="fpara">Updated First Paragraph</p> -->
+
+<!-- document.getElementById('fheading').innerHTML -->
+<!-- <h1 id="fheading">First Heading</h1> -->
+ 
+<!-- document.getElementById('fheading').innerHTML = 'Updated First Heading'; -->
+<!-- <h1 id="fheading">Updated First Heading</h1> -->
+
+
+<!-- document.getElementById('fdiv').innerHTML -->
+<!-- <div id="fdiv">
+        <section>
+            <button>subscribe</button>
+        </section>
+    </div> -->
+
+<!-- document.getElementById('fdiv').innerHTML = '<h2>New Heading</h2>'; -->
+<!-- <div id="fdiv">
+        <h2>New Heading</h2>
+    </div> -->
+
+
+<!-- outerHTML -->
+<!-- document.getElementById('fpara').outerHTML; -->
+<!-- <p id="fpara">First Paragraph</p> -->
+
+<!-- document.getElementById('fpara').outerHTML = '<h2>New Heading</h2>'; -->
+<!-- <h2>New Heading</h2> -->
+
+<!-- document.getElementById('fdiv').outerHTML -->
+<!-- <div id="fdiv">
+        <section>
+            <button>subscribe</button>
+        </section>
+    </div> -->
+
+<!-- document.getElementById('fdiv').outerHTML = '<h2>New Heading</h2>'; -->
+<!-- <h2>New Heading</h2> -->
+
+
+<!-- set and get textContent -->
+<!-- document.getElementById('fpara').textContent; -->
+<!-- First Paragraph -->
+
+<!-- document.getElementById('fpara').textContent = 'Updated First Paragraph'; -->
+<!-- Updated First Paragraph -->
+
+<!-- document.getElementById('fheading').textContent -->
+<!-- First Heading -->
+
+<!-- document.getElementById('fheading').textContent = 'Updated First Heading'; -->
+<!-- Updated First Heading -->
+
+<!-- document.getElementById('fdiv').textContent -->
+<!-- <div id="fdiv">
+        <section>
+            <button>subscribe</button>
+        </section>
+    </div> -->
+
+<!-- document.getElementById('fdiv').textContent = 'New Heading'; -->
+<!-- New Heading -->
+
+<!-- document.getElementById('sdiv').textContent -->
+ <!-- \n        \n            this is my first para inside div\n            \n                this is span inside div and p\n            \n        \n        this is my second para inside div\n\n    ' -->
+
+
+ <!-- let element = document.querySelector("#sdiv") -->
+        <!-- undefined -->
+
+<!-- element.textContent -->
+<!-- \n        \n            this is my first para inside div\n            \n                this is span inside div and p\n            \n        \n        this is my second para inside div\n\n    ' -->
+
+<!-- element.innerText -->
+<!-- this is my first para inside div
+            this is span inside div and p
+        this is my second para inside div -->
+
+<!-- element.innerHTML -->
+<!-- \n        <p>\n            this is my first para inside div\n            <span>\n                this is span inside div and p\n            </span>\n        </p>\n        <p>this is my second para inside div</p>\n    ' -->
+
+<!-- element.innerText = "new text" -->
+<!-- 'new text' -->
+
+
+<!-- inner text vs text content vs inner html vs outer html -->
+<!-- inner text get only visible text and ignore the html tags
+text content get all the text including hidden text and ignore the html tags
+inner html get the html tags as well as text content
+outer html get the html tags as well as text content including the element itself -->
+
+
+<!-- add element  -->
+<!-- let fheading = document.createElement("h1") -->
+        <!-- undefined -->
+
+<!-- fheading -->
+        <!-- <h1></h1> -->
+
+<!-- fheading.textContent = "My name is Lucky Kaushik" -->
+        <!-- 'My name is Lucky Kaushik' -->
+
+<!-- fheading -->
+        <!-- <h1>My name is Lucky Kaushik</h1> -->
+
+<!-- document.body.appendChild(fheading) -->
+        <!-- <h1>My name is Lucky Kaushik</h1> -->
+
+<!-- let bodyTag = document.querySelect('body'); -->
+        <!-- undefined --> 
+        
+<!-- bodyTag  -->
+        <!-- <body>...</body> -->
+
+<!-- bodyTag.appendChild(fheading)  -->
+        <!-- <h1>My name is Lucky Kaushik</h1> -->
+        <!-- now h1 tag is added at the end of body tag -->
+         <!-- child tag is added at the end of parent tag -->
+          <!-- solution of this is use insert adjesent html() method -->
+            <!-- insertAdjacentElement(has beforebegin, afterbegin, beforeend and afterend) -->
+
+            <div>
+                hello ji
+                <div id="mydiv">
+                    <p>first</p>
+                    <h1>second</h1>
+                    <p>third</p>
+                </div>
+            </div>
+
+            <!-- let mydiv = document.querySelector('#mydiv') -->
+                <!-- undefined -->
+
+             <!-- mydiv -->
+                <!-- <div id="mydiv">
+                    <p>first</p>
+                    <h1>second</h1>
+                    <p>third</p>
+                </div> -->
+
+            <!-- let newElement = document.createElement('span') -->
+                <!-- undefined -->
+
+            <!-- newElement -->
+                <!-- <span></span> -->
+
+            <!-- newElement.textContent = "this is me Lucky kaushik" -->
+                <!-- 'this is me Lucky kaushik' -->
+
+            <!-- newElement -->
+                <!-- <span>this is me Lucky kaushik</span> -->
+
+            <!-- mydiv.insertAdjacentElement('beforebegin', newElement) -->
+                <!-- <span>this is me Lucky kaushik</span> -->
+                <!-- now span tag is added before the mydiv tag -->
+
+
+                <!-- remove child element -->
+                 
+                <!-- let mydiv = document.querySelector('#mydiv') -->   
+                    <!-- undefined -->      
+                
+                    <!-- mydiv -->
+                    <!-- <div id="mydiv">
+                        <p>first</p>
+                        <h1>second</h1>
+                        <p>third</p>
+                    </div> -->
+                
+                    <!-- let firstPara = mydiv.querySelector('p') -->
+                        <!-- undefined -->
+
+                    <!-- firstPara -->
+                        <!-- <p>first</p> -->
+
+                    <!-- mydiv.removeChild(firstPara) -->
+                        <!-- <p>first</p> -->
+
+                    <!-- now first para is removed from the mydiv tag -->
+
+            
+</body>
+</html>
