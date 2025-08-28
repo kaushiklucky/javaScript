@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fpara">First Paragraph</p>
+
+    <h1 id="fheading">First Heading</h1>
+
+    <p class="text">This is first paragragh</p>
+    <p class="text">This is second paragragh</p>
+
+</body>
+</html>
+
+
+
+<!-- console input/output  -->
+
+<!-- Select the first paragraph using its ID -->
+<!-- document.getElementById('fpara');  --> 
+        <!-- <p id="fpara">First Paragraph</p> -->
+    
+
+<!--  Select element by class name -->
+<!-- document.getElementsByClassName('text'); -->
+        <!-- HTMLCollection(2) [p.text, p.text] -->
+
+<!-- select element by tag name -->
+<!-- document.getElementsByTagName('p'); -->
+        <!-- HTMLCollection(3) [p#fpara, p.text, p.text] -->
+
+<!-- document.getElementsByTagName('h1'); -->
+        <!-- HTMLCollection(1) [h1#fheading] -->
+
+
+<!-- Select using querySelector -->
+<!-- document.querySelector('#fpara'); -->
+        <!-- <p id="fpara">First Paragraph</p> -->
+
+<!-- document.querySelector('.text'); -->
+        <!-- <p class="text">This is first paragragh</p> -->
+
+<!-- document.querySelector('p'); -->
+        <!-- <p id="fpara">First Paragraph</p> -->
+
+<!-- Select using querySelectorAll -->
+<!-- document.querySelectorAll('.text'); -->
+        <!-- NodeList(2) [p.text, p.text] -->
+
+<!-- document.querySelectorAll('p'); -->
+        <!-- NodeList(3) [p#fpara, p.text, p.text] -->
+
+<!-- document.querySelectorAll('h1'); -->
+        <!-- NodeList(1) [h1#fheading] -->
+
+<!-- query selector select first element only
+query selector all select all the elements
+get element by class name and tag name return html collection
+get element by id return single element -->
+
+
+<!-- $0 -->
+<!-- $0 is used to access the last selected element in the elements tab of the developer console -->
+<!-- <p id="fpara">First Paragraph</p> -->
+<!-- $1 -->
+<!-- $1 is used to select the second last selected element in the elements tab of the developer console -->
+<!-- <h1 id="fheading">First Heading</h1> -->
