@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation - style elements</title>
+</head>
+<body>
+    <div id="fdiv" style="background-color: aqua; padding:  2rem;">first div 
+        <p id="fpara" style="background-color: green; padding: 1rem;" class="goku vegeta">first para</p>
+        <div id="sdiv" style="background-color: yellow; padding: 1.2rem;"> second dev
+            <p id="spara" style="background-color: orange; padding: 0.8rem;" class="secondClass">second para</p>
+        </div>
+    </div>
+
+    <!-- // console input/output -->
+     <!-- let paraElement = document.getElementById('spara') -->
+         <!-- undefined -->
+
+    <!-- paraElement -->
+        <!-- <p id="spara" style="background-color: orange; padding: 0.8rem;">second para</p> -->
+
+    <!-- console.log(paraElement.style);   -->
+        <!-- Object { background-color: "orange", padding: "0.8rem" } -->
+
+    <!-- paraElement.style.backgroundColor = 'blue'; -->
+        <!-- blue -->
+
+    <!-- paraElement.style.color = 'white'; -->
+        <!-- white -->
+    
+
+
+    <!-- let secondElement = document.getElementById('sdiv'); -->
+     <!-- undefined -->
+
+     <!-- secondElement -->
+        <!-- <div id="sdiv" style="background-color: yellow; padding: 1.2rem;"> second dev
+            <p id="spara" style="background-color: orange; padding: 0.8rem;">second para</p>
+        </div> -->
+
+     <!-- secondElement.cssText;    -->
+      <!-- undefined -->
+
+    <!-- secondElement.style.cssText; -->
+        <!-- background-color: yellow; padding: 1.2rem; -->
+
+    <!-- secondElement.style.cssText = "background-color: black; color: white; padding: 0.5rem";     -->
+        <!-- 'background-color: black; color: white; padding: 0.5rem' -->
+
+
+
+
+    <!-- let firstDiv = document.getElementById('fdiv'); -->
+     <!-- undefined -->
+
+    <!-- firstDiv.style.cssText;  -->
+     <!-- 'background-color: aqua; padding: 2rem;' -->
+
+    <!-- firstDiv.style.cssText = 'background-color: grey; padding: 4rem;' -->
+     <!-- 'background-color: grey; padding: 4rem;' -->
+     
+
+    
+     <!-- // adding attributes -->
+    <!-- let firstElement = document.querySelector('#fdiv'); -->
+
+    <!-- firstElement.setAttribute('class', 'divClass') -->
+     <!-- a div class divClass is added -->
+
+     <!-- firstElement.classList.add('divClass'); -->
+     <!-- a div class divClass is added -->
+
+     <!-- firstElement.classList.remove('divClass'); -->
+     <!-- a div class divClass is removed -->
+
+
+    
+     <!-- firstElement.setAttribute('class', 'secondDivClass'); -->
+      <!-- a div class secondDivClass is added -->
+
+    
+
+
+    <!-- firstElement.setAttribute('style', "padding: 0.1rem"); -->
+     <!-- setAttribute cleans all existing styles and replaces them with the new one -->
+
+
+
+    <!-- let fpara = $0;  -->
+     <!-- undefined -->
+
+    <!-- fpara.setAttribute('style', 'margin: 1rem');  -->
+
+
+
+    
+    <!-- let fpara = $0; -->
+     <!-- undefined -->
+
+    <!-- fpara.className  -->
+     <!-- 'goku vegeta' -->
+
+    <!-- fpara.className = "Gohan Bulbul"; -->
+     <!-- 'Gohan Bulbul' -->
+
+     <!-- // className overwrites existing classes, not adding new ones -->
+
+
+
+
+     <!-- let spara = document.querySelector('#spara'); -->
+
+    <!-- spara.classList -->
+        <!-- DOMTokenList ['secondClass', value: 'secondClass'] -->
+
+
+    <!-- spara.classList.add('thirdClass');     -->
+
+    <!-- spara.classList -->
+        <!-- DOMTokenList(2) ['secondClass', 'thirdClass', value: 'secondClass thirdClass'] -->
+
+    <!-- spara.classList.remove('secondClass'); -->
+
+    <!-- spara.classList -->
+     <!-- DOMTokenList ['thirdClass', value: 'thirdClass'] -->
+
+     <!-- spara.classList.toggle('secondClass'); -->
+      <!-- true -->
+
+    <!-- spara.classList -->
+     <!-- DOMTokenList(2) ['thirdClass', 'secondClass', value: 'thirdClass secondClass'] -->
+
+    <!-- spara.classList.toggle('secondClass'); -->
+     <!-- false -->
+
+     <!-- spara.classList -->
+     <!-- DOMTokenList(2) ['thirdClass', value: 'thirdClass'] -->
+
+     <!-- spara.classList.contains('secondClass'); -->
+     <!-- false -->
+
+     <!-- spara.classList.contains('thirdClass'); -->
+        <!-- true -->
+
+</body>
+</html>
