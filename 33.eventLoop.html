@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Callback: A function passed to another function, to be executed later.
+      <br />
+      Browser (Web APIs): Handle things like timers, DOM events, AJAX in the
+      background. <br />
+      Callback Queue: Place where finished async tasks wait to run. <br />
+      Event Loop: Bridge between queue and call stack → keeps pushing callbacks
+      to execution when stack is free.
+    </p>
+    <br />
+    <br />
+
+    <p>
+      🔎 Step-by-step explanation <br />
+
+      Call Stack (main JS execution): console.log('start') → runs immediately.
+      setTimeout(...) → browser timer is started, callback (timeout) is
+      registered. console.log('end') → runs immediately. <br />
+
+      Browser APIs (Web APIs): The browser handles the timer (5 sec) in the
+      background. JavaScript doesn’t wait → continues running other code. <br />
+
+      Callback Queue: After 5 sec, the callback function timeout is moved into
+      the callback queue (waiting to run). <br />
+
+      Event Loop: The event loop keeps checking: “Is the call stack empty?” Once
+      the stack is empty (after start and end logs are done), it takes the
+      callback from the queue and pushes it into the call stack. <br />
+
+      Execution: Finally, console.log("Lucky Kaushik") runs.
+    </p>
+
+    
+    <button>click me</button>
+
+    <script src="33.eventLoop.js"></script>
+  </body>
+</html>
