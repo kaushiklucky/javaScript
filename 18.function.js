@@ -25,6 +25,58 @@ const greet2 = (name2) => {
 console.log(greet2("LuckyKaushik"));
 
 
+let add = (a,b) => {
+    return a+b;
+}
+let result = add(10,20);
+console.log(result);
+
+
+let add2 = (a,b) => a+b; // implecite return
+let result2 = add2(20,30);
+console.log(result2);
+
+let printNum = a => console.log(a);
+printNum(10);
+
+
+// not argument object in arrow function
+
+function add3(){ //regular function
+    console.log(arguments);
+}
+add3(10,20,30,40,50);
+
+// let add4 = () => console.log(arguments) // cant use will give error
+// add4(10,20,30,40,50);
+
+
+const person = {
+    name: 'John',
+    greet: function(){
+        console.log("greet", this)
+        console.log(`Hello, my name is ${this.name}`)
+    },
+    greetTwo: () => { // arrow function ke pas kud ka this nhi hota woo lexicaly le leta hai global se, arrow function taking this from window and this.name is not defined in window so nothing will print
+        console.log("greetTwo", this)
+        console.log(`Hello, my name is ${this.name}`)
+    }
+}
+
+// we cant use arrow function as a cunstructor
+function RegularFunction(name){
+    this.name = name;
+}
+const regularObj = new RegularFunction('Lucky')
+console.log(regularObj)
+
+
+const ArrowFunction = (name) => {
+    this.name = name
+}
+// const arrowObj = new ArrowFunction("Kaushik");
+// console.log(arrowObj);  // this give error
+
 //Callback Functions --> functions can be passed as arguments to other functions, commonly known as callback functions. They're extensively used in asynchronous programming and event handling.
 function fetchData(callback) {
     // Simulated asynchronous operation
