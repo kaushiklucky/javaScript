@@ -22,10 +22,13 @@ console.log(Array.isArray(obj));
 
 
 // array indexing 
-let arr = ['Lucky', 'True', '5', '3.14'];
+let arr = ['Lucky', 'True', '5', '3.14', false];
 console.log(arr[2]);
 console.log(arr[0]);
 console.log(arr[3]);
+
+delete arr[1];
+console.log(arr);
 
 
 
